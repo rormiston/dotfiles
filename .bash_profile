@@ -10,7 +10,6 @@ if [ -d "${PYENV_ROOT}" ]; then
     eval "$(pyenv init -)"
 fi
 
-
 # Set up the command prompt
 if [ "$PS1" ]; then
 PS1='\W: '
