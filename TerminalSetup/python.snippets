@@ -1,0 +1,52 @@
+snippet todo "to do item" b
+# TODO: `echo $USER` $1 `!v strftime("%c")`
+endsnippet
+
+snippet npi "import numpy as np" b
+import numpy as np
+endsnippet
+
+snippet plt "import matplotlib.pyplot as plt" b
+import matplotlib.pyplot as plt
+endsnippet
+
+snippet fgwpy "from gwpy.$1 import $2" b
+from gwpy.$1 import $2
+endsnippet
+
+snippet fscipy "from scipy import something" b
+from scipy.$1 import $2
+endsnippet
+
+snippet edited "last edited information" b
+# Last edited by `echo $USER` at `!v strftime("%c")`
+endsnippet
+
+snippet pyshebang "python shebang, useful for virtualenvs" b
+#! `which python3`
+endsnippet
+
+snippet cohsegi "coherence segment import" b
+from stamp_pem.coherence_segment import PEMCoherenceSegment
+endsnippet
+
+snippet fstamppem "import stamppem" b
+from stamp_pem.${1:coherence_segment} import ${2:PEMCoherenceSegment}
+endsnippet
+
+snippet argparse "create an argparser" b
+def parse_command_line():
+    """
+    parse command line
+    """
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--$1', '-$2', help=$3, default=$4, dest=$5)
+    params = parser.parse_args()
+    return params
+endsnippet
+
+snippet arg "add an argparse option" b
+parser.add_argument("--$1", "-$2",
+    help="$3", default=$4,
+    dest="$5", type=$6)
+endsnippet

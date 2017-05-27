@@ -1,21 +1,24 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/richormiston/.oh-my-zsh
 export PATH=/Users/richormiston/anaconda/bin:/bin:/sbin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/local/bin:/opt/local/bin:/opt/ldg/bin:$PATH
+# export EDITOR='subl -w'
+export EDITOR='vim'
 
-# Launch Sublime from the command line
-export EDITOR='subl -w'
-
-# Some convenient aliases
-alias py=python3
+alias python=python3
 alias it=itunes
 alias lsd='ls -d */'
 alias sc='scala -cp classes'
+alias lst='ls -trlh'
+alias g++='g++ --std=c++0x'
+alias LLO='gsissh -YC ldas-pcdev2.ligo-la.caltech.edu'
+alias LHO='gsissh -YC ldas-pcdev2.ligo-wa.caltech.edu'
+alias CIT='gsissh -YC ldas-pcdev5.ligo.caltech.edu'
+alias gvim='vim $(fzf)'
 
 autoload -Uz compinit promptinit
 compinit
 promptinit
 
-# Load history with arrow keys. Perhaps the best thing ever
 autoload -Uz up-line-or-beginning-search down-line-or-beginning-search
 zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
@@ -50,7 +53,7 @@ ZSH_THEME="agnoster"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+# ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -79,6 +82,7 @@ plugins=(git colored-man colorize github jira vagrant virtualenv pip python brew
 # export PATH="/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 # export MANPATH="/usr/local/man:$MANPATH"
 
+source /Users/richormiston/.profile
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -105,3 +109,5 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

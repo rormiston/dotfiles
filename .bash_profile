@@ -33,7 +33,6 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 [[ -n "${key[Down]}" ]] && bindkey "${key[Down]}" down-line-or-beginning-search
 
 # Convenient shortcuts
-alias py=python3
 alias it=itunes
 alias lsd='ls -d */'
 
