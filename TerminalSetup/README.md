@@ -9,9 +9,12 @@ Just run
 from the TerminalSetup directory and it'll install
 [ultimate-vim](https://github.com/amix/vimrc), 
 [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), 
+[fzf](https://github.com/junegunn/fzf),
+[fzf.vim](https://github.com/junegunn/fzf.vim),
 [iTerm colors](https://github.com/mbadolato/iTerm2-Color-Schemes),
 [vimwiki](https://github.com/vimwiki/vimwiki) and
-[ultisnips](https://github.com/SirVer/ultisnips). I should probably add
+[ultisnips](https://github.com/SirVer/ultisnips). This will also add
+some python snippets and vim mappings. I should probably add
 [powerline](https://github.com/powerline/powerline) to this and also
 [fonts](https://github.com/powerline/fonts), but I like installing those
 separately.
