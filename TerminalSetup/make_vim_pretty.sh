@@ -25,6 +25,8 @@ cd ~/.fzf
 cd ~/.vim_runtime/sources_non_forked/
 git clone https://github.com/junegunn/fzf.git
 git clone https://github.com/junegunn/fzf.vim.git
+cat ~/.fzf.zsh fzf_functions.zsh > fzftemp.zsh
+mv fzftemp.zsh ~/.fzf.zsh
 
 # Install UltiSnips
 cd ~/.vim_runtime/sources_non_forked/
