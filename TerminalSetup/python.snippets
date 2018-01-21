@@ -2,12 +2,30 @@ snippet todo "to do item" b
 # TODO: `echo $USER` $1 `!v strftime("%c")`
 endsnippet
 
-snippet npi "import numpy as np" b
+snippet np "import numpy as np" b
 import numpy as np
 endsnippet
 
 snippet plt "import matplotlib.pyplot as plt" b
 import matplotlib.pyplot as plt
+endsnippet
+
+snippet mat "import pyplot with agg backend" b
+import matplotlib
+matplotlib.use('agg')
+import matplotlib.pyplot as plt
+endsnippet
+
+snippet sio "import scipy.io as sio" b
+import scipy.io as sio
+endsnippet
+
+snippet sig "import scipy.signal as sig" b
+import scipy.signal as sig
+endsnippet
+
+snippet tf "import tensorflow as tf" b
+import tensorflow as tf
 endsnippet
 
 snippet fgwpy "from gwpy.$1 import $2" b
@@ -40,13 +58,20 @@ def parse_command_line():
     parse command line
     """
     parser = argparse.ArgumentParser()
-    parser.add_argument('--$1', '-$2', help=$3, default=$4, dest=$5)
+    parser.add_argument('--$1', '-$2',
+						help    = $3,
+						default = $4,
+						dest    = $5,
+						type    = $6)
+
     params = parser.parse_args()
     return params
 endsnippet
 
 snippet arg "add an argparse option" b
 parser.add_argument("--$1", "-$2",
-    help="$3", default=$4,
-    dest="$5", type=$6)
+    				help    = "$3",
+					default = $4,
+    				dest    = "$5",
+					type    = $6)
 endsnippet

@@ -13,7 +13,8 @@ alias g++='g++ --std=c++0x'
 alias LLO='gsissh -YC ldas-pcdev2.ligo-la.caltech.edu'
 alias LHO='gsissh -YC ldas-pcdev2.ligo-wa.caltech.edu'
 alias CIT='gsissh -YC ldas-pcdev5.ligo.caltech.edu'
-alias gvim='vim $(fzf)'
+alias fvim='vim $(fzf)'
+alias fm='vim -p $(fzf -m)'
 
 autoload -Uz compinit promptinit
 compinit

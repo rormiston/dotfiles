@@ -1,6 +1,7 @@
 " Set numbers and relative numbers
 set number
 set rnu
+set viminfo+=<1000
 
 " Vimwiki Setup
 let g:vimwiki_list = [{
